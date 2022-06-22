@@ -23,3 +23,6 @@ xmr_obj = xmr()
 def hello_world():
     start_str = request.args.get('start_string', default = "", type = str)
     return generate(xmr_obj, start_str)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
